@@ -1,0 +1,315 @@
+/* General Styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Default text color */
+    line-height: 1.6; 
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4CAF50; /* Bright green for headings */
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555; /* Lighter gray for paragraph text */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    z-index: 10;
+    backdrop-filter: blur(10px); /* Blurred background for navbar */
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #4CAF50; /* Green text on hover */
+}
+
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4CAF50; /* Bright green underline */
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+header {
+    background: url('bakuriani-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflow for animations */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Position above the overlay */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.btn:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-section p {
+    margin-top: 1.5rem;
+    max-width: 800px; /* Max width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Accommodations Section */
+.accommodations-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(33.333% - 20px); /* Responsive card width */
+    margin: 10px; /* Margin for spacing */
+    border-radius: 15px; /* More modern rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for images */
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem; /* Slightly larger heading */
+}
+
+/* Activities Section */
+.activities-section {
+    padding: 4rem 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Centered form width */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #4CAF50; /* Green border on focus */
+    outline: none;
+}
+
+.contact-form button {
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow on hover */
+}
+
+/* Footer */
+.footer {
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 1rem 0; /* Margin for vertical spacing */
+    }
+
+    header {
+        height: 70vh; /* Adjust header height for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 3rem; /* Smaller heading size */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Smaller paragraph size */
+    }
+
+    .card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill), minmax(200px),
+    }
+}
