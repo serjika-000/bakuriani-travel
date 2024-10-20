@@ -128,11 +128,11 @@ header#home {
 }
 
 .hero-content p{
-    color:slategray;
+    color:#f1f1f1;
 
 }
 .hero-content h1{
-    color:slategray;
+    color:#f1f1f1;
 }
 
 header#home::before {
@@ -149,7 +149,7 @@ header#home::before {
 .btn {
     background-color: #3a5a40; /* Button background color */
     color: white; /* Button text color */
-    padding: 10px 20px; /* Padding for the button */
+    padding: 5px 20px; /* Padding for the button */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
@@ -578,7 +578,8 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 3rem; /* Smaller heading size */
+        font-size: 3rem;
+         /* Smaller heading size */
     }
 
     .hero-content p {
