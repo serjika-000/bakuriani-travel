@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-links');
+    const images = document.querySelectorAll('.gallery-grid img');
+    
 
     // Toggle mobile menu
     mobileMenu.addEventListener('click', () => {
@@ -50,3 +52,6 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+
+  
