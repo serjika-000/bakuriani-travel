@@ -41,12 +41,12 @@ if (contactForm) {
 
         // Basic validation
         if (!name || !email || !message) {
-            alert("Please fill in all fields.");
+            alert("გთხოვთ, შეავსოთ ყველა ველი.");
             return;
         }
 
         // Example of form submission (replace with your logic)
-        alert("Thank you for your message! We will get back to you soon.");
+        alert("გმადლობთ შეტყობინებისთვის! ჩვენ მალე დაგიკავშირდებით");
 
         // Reset the form
         contactForm.reset();
