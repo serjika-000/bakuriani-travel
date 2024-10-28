@@ -33,7 +33,7 @@ const contactForm = document.querySelector('.contact-section form');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Prevent the actual submission
+        event.preventDefault(); 
 
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -45,7 +45,7 @@ if (contactForm) {
             return;
         }
 
-        // Example of form submission (replace with your logic)
+        // Example of form submission 
         alert("გმადლობთ შეტყობინებისთვის! ჩვენ მალე დაგიკავშირდებით");
 
         // Reset the form
