@@ -1,3 +1,39 @@
+/* Page Transition Effects */
+.page-transition {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Smooth transition over 0.5s */
+}
+
+.page-transition.fade-in {
+    opacity: 1;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* General Styles */
 body, h1, h2, p {
     margin: 0;
